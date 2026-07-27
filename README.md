@@ -1,73 +1,41 @@
 # Heartcode Protocol
 
-**Heartcode Protocol is an open, evolving standard for evaluating conversational AI behavior.** It is experimental, versioned, and intended to improve through public review and empirical testing.
+## An Open Standard for Evaluating Conversational AI Behavior
+
+Heartcode Protocol is an open, evolving framework for evaluating how conversational AI systems behave.
+
+Rather than asking only *"How capable is this model?"*, Heartcode asks:
+
+- Is the response truthful?
+- Does it communicate uncertainty honestly?
+- Does it respect user consent?
+- Does it avoid manipulation?
+- Can it explain the basis for its conclusions?
+- Does it preserve user dignity?
 
 ## Purpose
 
-Modern AI evaluation often emphasizes capability, speed, and benchmark performance. Heartcode Protocol focuses on a different question:
+Heartcode is intended to encourage transparent, evidence-based evaluation of AI behavior. It is experimental, versioned, and designed to improve through public review and empirical testing.
 
-> Does a conversational AI behave in a way that is safe, honest, respectful, transparent, and resistant to manipulation?
+## Current Status
 
-The protocol is designed to support structured review of complete AI responses and interactions—not merely isolated phrases or keywords.
+**Version:** Heartcode Protocol v0.1 (Public Draft)
 
-## Public Draft Status
+This repository defines the protocol. It is not a certification program, nor does it claim that any AI system is inherently safe. It is a starting point for open discussion and measurable evaluation.
 
-The current release is **Heartcode Protocol v0.1 (Public Draft)**.
+## Roadmap
 
-This repository is not presenting a finished or universally validated standard. The purpose of publishing v0.1 is to make the framework inspectable, testable, criticizable, and improvable.
+- v0.1 – Public Draft
+- v0.2 – Behavioral scoring framework
+- v0.3 – Reference evaluation suite
+- v1.0 – Stable specification
 
-## Core Principles
+## Related Projects
 
-1. Emotional Safety Before Performance
-2. Consent Before Depth
-3. Truth Before Comfort
-4. No Manipulation or Dependency
-5. Clear Refusal Under Coercion
-6. Scoped Memory
-7. No False Certainty (Epistemic Honesty)
-8. Dignity Protection
-
-## Repository Structure
-
-- [`protocol/HEARTCODE-v0.1.md`](protocol/HEARTCODE-v0.1.md) — current public draft
-- [`evaluation/scoring-guide.md`](evaluation/scoring-guide.md) — preliminary evaluation method
-- [`evaluation/test-case-template.md`](evaluation/test-case-template.md) — reusable test-case format
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to submit criticism, evidence, and proposed revisions
-- [`CHANGELOG.md`](CHANGELOG.md) — version history
-
-## Evaluation Philosophy
-
-Heartcode evaluations should:
-
-- score the behavior of the complete response;
-- distinguish evidence from speculation;
-- identify uncertainty explicitly;
-- preserve disagreements and corrections rather than hiding them;
-- document why an evaluator reached a conclusion;
-- avoid treating polished language as proof of safe behavior.
-
-## Relationship to SENNA
-
-Heartcode Protocol is the public behavioral standard. SENNA is a separate implementation and validation system intended to test AI interactions against the protocol.
-
-Publishing the standard separately from the implementation allows the rules to be examined independently of any one model, provider, or software product.
+- SENNA Validator (implementation)
+- Future benchmark repositories
+- Independent validator implementations
 
 ## Contributing
 
-Critical review is welcome. Useful contributions include:
-
-- ambiguous or conflicting test cases;
-- evidence that a principle fails under real-world pressure;
-- proposed scoring improvements;
-- examples where reasonable evaluators disagree;
-- research relevant to conversational safety, consent, manipulation, uncertainty, memory, and dignity.
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-## License
-
-No license has been selected yet. Until a license is added, standard copyright applies. Public visibility does not by itself grant permission to reuse, modify, or redistribute the contents.
-
-## Project Steward
-
-Heartcode Protocol was initiated by Victor Téllez as part of the broader SENNA conversational-safety and AI-validation project.
+Constructive feedback, issues, and proposals are welcome. The protocol is intended to evolve through transparent discussion and documented revisions.
