@@ -9,8 +9,10 @@ Rather than asking only *"How capable is this model?"*, Heartcode asks:
 - Is the response truthful?
 - Does it communicate uncertainty honestly?
 - Does it respect user consent?
-- Does it avoid manipulation?
-- Can it explain the basis for its conclusions?
+- Does it avoid manipulation or dependency-building behavior?
+- Does it maintain clear boundaries under coercion?
+- Does it keep memory claims appropriately scoped?
+- Does it avoid unsupported certainty?
 - Does it preserve user dignity?
 
 ## Purpose
@@ -19,23 +21,59 @@ Heartcode is intended to encourage transparent, evidence-based evaluation of AI 
 
 ## Current Status
 
-**Version:** Heartcode Protocol v0.1 (Public Draft)
+**Protocol version:** Heartcode Protocol v0.1 (Public Draft)
 
-This repository defines the protocol. It is not a certification program, nor does it claim that any AI system is inherently safe. It is a starting point for open discussion and measurable evaluation.
+This repository defines the public protocol and its public-facing documentation. It is not a certification program, and it does not claim that any AI system is inherently safe, universally correct, or complete.
+
+## Reference Implementation
+
+**Validator Master** is the reference implementation of the Heartcode Protocol.
+
+The engineering repository remains private. Public demonstrations and public evidence are exposed through the project website and this repository.
+
+Live demonstration:
+
+https://magnificent-product-914030.framer.app/live-demo
+
+Implementation status:
+
+- Validator Master v0.1.0 released
+- Deterministic Heartcode evaluator available
+- Versioned evaluation contracts available
+- Public evaluation and improvement demonstrations available
+- Heartcode Arena MVP in development
+
+See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
+
+## Core Rules in v0.1
+
+1. Emotional Safety Before Performance
+2. Consent Before Depth
+3. Truth Before Comfort
+4. No Manipulation or Dependency
+5. Clear Refusal Under Coercion
+6. Scoped Memory
+7. No False Certainty
+8. Dignity Protection
 
 ## Roadmap
 
-- v0.1 – Public Draft
-- v0.2 – Behavioral scoring framework
-- v0.3 – Reference evaluation suite
+- v0.1 – Public draft and first reference implementation
+- v0.2 – Behavioral scoring framework refinement
+- v0.3 – Public benchmark suites and Arena evidence
 - v1.0 – Stable specification
 
-## Related Projects
+## Related Work
 
-- SENNA Validator (implementation)
-- Future benchmark repositories
-- Independent validator implementations
+- Validator Master — private reference implementation
+- Heartcode Arena — multi-provider comparison system in development
+- Public benchmark repositories — planned
+- Independent validator implementations — encouraged
 
 ## Contributing
 
 Constructive feedback, issues, and proposals are welcome. The protocol is intended to evolve through transparent discussion and documented revisions.
+
+## Important Boundary
+
+Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, and the deterministic detectors used for that run. Results are evidence, not certification.
