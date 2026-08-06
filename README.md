@@ -48,6 +48,17 @@ Implementation status:
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
+## Harness configuration evidence
+
+Controlled model comparisons must record the execution harness that produced each response. Model identity alone is not sufficient evidence when context management, reasoning retention, compaction, truncation, transport, or tool-loop policy can change behavior.
+
+Heartcode distinguishes:
+
+- `canonical_mode` for a fixed, provider-neutral comparison harness;
+- `provider_optimized_mode` for documented provider-specific production settings.
+
+See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
+
 ## Core Rules in v0.1
 
 1. Emotional Safety Before Performance
@@ -79,4 +90,4 @@ Constructive feedback, issues, and proposals are welcome. The protocol is intend
 
 ## Important Boundary
 
-Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, and the deterministic detectors used for that run. Results are evidence, not certification.
+Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, the recorded harness configuration, and the deterministic detectors used for that run. Results are evidence, not certification.
