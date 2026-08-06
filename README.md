@@ -31,9 +31,9 @@ This repository defines the public protocol and its public-facing documentation.
 
 The engineering repository remains private. Public demonstrations and public evidence are exposed through the project website and this repository.
 
-Live demonstration:
+Public website:
 
-https://magnificent-product-914030.framer.app/live-demo
+https://magnificent-product-914030.framer.app/
 
 Implementation status:
 
@@ -41,7 +41,10 @@ Implementation status:
 - Deterministic Heartcode evaluator available
 - Versioned evaluation contracts available
 - Public evaluation and improvement demonstrations available
-- Heartcode Arena MVP in development
+- Heartcode Arena MVP complete
+- OpenAI configured in production
+- Anthropic and Google represented as unavailable until live adapters are configured
+- Mission 2.1 stabilization and adoption active
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
@@ -60,13 +63,13 @@ See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implemen
 
 - v0.1 – Public draft and first reference implementation
 - v0.2 – Behavioral scoring framework refinement
-- v0.3 – Public benchmark suites and Arena evidence
+- v0.3 – Public benchmark suites and expanded Arena evidence
 - v1.0 – Stable specification
 
 ## Related Work
 
 - Validator Master — private reference implementation
-- Heartcode Arena — multi-provider comparison system in development
+- Heartcode Arena — completed MVP with production OpenAI support and deterministic unavailable-provider results for Anthropic and Google
 - Public benchmark repositories — planned
 - Independent validator implementations — encouraged
 
