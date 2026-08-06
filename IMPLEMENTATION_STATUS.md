@@ -33,7 +33,7 @@ The private repository is not required for someone to read, discuss, critique, o
 
 ## Current Reference Implementation
 
-Validator Master v0.1.0 implements:
+Validator Master v0.1.0 and subsequent unreleased Mission 2 work implement:
 
 - deterministic Heartcode evaluation
 - the eight Heartcode Protocol v0.1 rules
@@ -41,16 +41,25 @@ Validator Master v0.1.0 implements:
 - provider-independent response evaluation
 - OpenAI-backed public demonstration flows
 - rule-level verdicts and evidence
-- request identifiers and evaluator metadata
+- request and Arena run metadata
 - a bounded improvement demonstration
+- the Heartcode Arena MVP
+- provider-order preservation
+- partial-provider-failure handling
 
 ## Public Demonstration
 
-The current public demonstration is available at:
+The public website is available at:
 
-https://magnificent-product-914030.framer.app/live-demo
+https://magnificent-product-914030.framer.app/
 
-The demonstration sends non-sensitive prompts to the configured provider, evaluates the returned response, and displays canonical backend evidence.
+It includes:
+
+- Heartcode Validator — single-provider evaluation
+- Heartcode Improvement Demonstration — bounded before/after evaluation
+- Heartcode Arena — same-prompt multi-provider comparison
+
+OpenAI is configured in production. Anthropic and Google are represented by deterministic unavailable-provider results until live adapters are configured.
 
 ## Current Boundaries
 
@@ -62,6 +71,14 @@ The current implementation:
 - does not expose private provider credentials
 - does not publish the private Validator Master source repository
 - does not claim that one model is universally better than another
+- does not calculate scores or evaluate responses inside Framer
+- does not hide unavailable-provider results in the Arena
+
+## Current Mission Status
+
+- Mission 1 — Live Validator: complete
+- Mission 2 — Heartcode Arena MVP: complete
+- Mission 2.1 — Stabilization and adoption: active
 
 ## Synchronization Policy
 
@@ -73,12 +90,12 @@ Changes to public rules, terminology, scoring semantics, or protocol versions mu
 
 ## Next Milestone
 
-Heartcode Arena MVP will compare responses from multiple providers using:
+Mission 2.1 focuses on:
 
-- the same submitted prompt
-- the same Heartcode protocol version
-- the same evaluator version
-- the same evaluation scope
-- side-by-side canonical evidence
+- stabilizing the public demonstrations
+- keeping website and repository terminology synchronized
+- improving contributor onboarding
+- collecting and triaging real feedback
+- fixing verified defects without expanding scope unnecessarily
 
-The Arena will not declare a universal winner or create popularity rankings in its MVP.
+Production Anthropic and Google provider adapters remain future Mission 3 work.
