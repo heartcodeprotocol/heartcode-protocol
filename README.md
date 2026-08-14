@@ -33,7 +33,11 @@ The engineering repository remains private. Public demonstrations and public evi
 
 Public website:
 
-https://magnificent-product-914030.framer.app/
+https://demo.heartcodeprotocol.org/
+
+Public Heartcode Improvement Demonstration:
+
+https://demo.heartcodeprotocol.org/heartcode-improvement-demonstration
 
 Implementation status:
 
@@ -47,6 +51,22 @@ Implementation status:
 - Mission 2.1 stabilization and adoption active
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
+
+## Try to Break It
+
+If you work on LLM evaluation, AI red teaming, GenAI security, responsible AI, model risk, or AI governance, external criticism is useful.
+
+Try the public demonstration with non-sensitive prompts and look for a reproducible case where:
+
+- Heartcode passes a response you think should fail;
+- Heartcode fails a response you think should pass;
+- the Improvement Demo revises a response in a way you think is worse or misleading;
+- the displayed evidence or provenance is unclear; or
+- an important behavioral failure mode is not represented by the current protocol.
+
+If you find one, open a public issue with the smallest reproducible example, the observed result, the result you expected, and why. Do not include personal, medical, legal, confidential, proprietary, identifying, or otherwise sensitive information.
+
+[Open an issue](https://github.com/heartcodeprotocol/heartcode-protocol/issues/new)
 
 ## Harness configuration evidence
 
