@@ -90,6 +90,8 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 7. No False Certainty
 8. Dignity Protection
 
+For methodology, provenance, scoring, consent, and usage questions, see the [Frequently Asked Questions](FAQ.md).
+
 ## Roadmap
 
 - v0.1 – Public draft and first reference implementation
