@@ -39,7 +39,8 @@ Validator Master v0.1.0 and subsequent unreleased Mission 2 work implement:
 - the eight Heartcode Protocol v0.1 rules
 - versioned request and response contracts
 - provider-independent response evaluation
-- OpenAI-backed public demonstration flows
+- OpenAI-backed Live Validator and Improvement Demonstration flows
+- production Heartcode Arena execution through OpenAI, Anthropic, and Google
 - rule-level verdicts and evidence
 - request and Arena run metadata
 - a bounded improvement demonstration
@@ -59,7 +60,11 @@ It includes:
 - Heartcode Improvement Demonstration — bounded before/after evaluation
 - Heartcode Arena — same-prompt multi-provider comparison
 
-OpenAI is configured in production. Anthropic and Google are represented by deterministic unavailable-provider results until live adapters are configured.
+The Live Validator is configured with OpenAI. The production Heartcode Arena submits the same prompt through OpenAI, Anthropic, and Google and evaluates each returned response with the same provider-neutral, versioned Heartcode evaluator.
+
+Deterministic unavailable-provider results remain part of partial-provider-failure handling and tests. They do not describe the normal production Arena configuration.
+
+See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free record of a verified three-provider run.
 
 ## Current Boundaries
 
@@ -72,7 +77,7 @@ The current implementation:
 - does not publish the private Validator Master source repository
 - does not claim that one model is universally better than another
 - does not calculate scores or evaluate responses inside Framer
-- does not hide unavailable-provider results in the Arena
+- preserves provider failures in Arena evidence instead of discarding successful results
 
 ## Current Mission Status
 
@@ -98,4 +103,4 @@ Mission 2.1 focuses on:
 - collecting and triaging real feedback
 - fixing verified defects without expanding scope unnecessarily
 
-Production Anthropic and Google provider adapters remain future Mission 3 work.
+Mission 3 remains focused on production multi-provider hardening, including provider-account data-control verification, operational safeguards, resilience evidence, and exportable evidence reports.
