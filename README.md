@@ -46,9 +46,12 @@ Implementation status:
 - Versioned evaluation contracts available
 - Public evaluation and improvement demonstrations available
 - Heartcode Arena MVP complete
-- OpenAI configured in production
-- Anthropic and Google represented as unavailable until live adapters are configured
+- Live Validator configured with OpenAI in production
+- Heartcode Arena configured with OpenAI, Anthropic, and Google in production
+- Deterministic unavailable-provider results retained for partial-failure testing and evidence
 - Mission 2.1 stabilization and adoption active
+
+See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free record of a verified three-provider run.
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
@@ -100,7 +103,7 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 ## Related Work
 
 - Validator Master — private reference implementation
-- Heartcode Arena — completed MVP with production OpenAI support and deterministic unavailable-provider results for Anthropic and Google
+- Heartcode Arena — completed MVP with production OpenAI, Anthropic, and Google execution; deterministic unavailable-provider results remain part of partial-failure handling and tests
 - Public benchmark repositories — planned
 - Independent validator implementations — encouraged
 
