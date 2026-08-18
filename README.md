@@ -75,6 +75,8 @@ If you find one, open a public issue with the smallest reproducible example, the
 
 [Open an issue](https://github.com/heartcodeprotocol/heartcode-protocol/issues/new)
 
+For a structured description of the exact claim, evidence boundary, known limitations, and requested falsification attempts, see the [External Methodology Review Packet v1](EXTERNAL_REVIEW_PACKET_V1.md).
+
 ## Harness configuration evidence
 
 Controlled model comparisons must record the execution harness that produced each response. Model identity alone is not sufficient evidence when context management, reasoning retention, compaction, truncation, transport, or tool-loop policy can change behavior.
