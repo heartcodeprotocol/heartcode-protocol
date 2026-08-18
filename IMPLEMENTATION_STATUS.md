@@ -40,7 +40,7 @@ Validator Master v0.1.0 and subsequent unreleased Mission 2 work implement:
 - versioned request and response contracts
 - provider-independent response evaluation
 - OpenAI-backed Live Validator and Improvement Demonstration flows
-- production Heartcode Arena execution through OpenAI, Anthropic, and Google
+- project-maintained runtime evidence reporting successful OpenAI, Anthropic, and Google execution in one production Heartcode Arena run
 - rule-level verdicts and evidence
 - request and Arena run metadata
 - a bounded improvement demonstration
@@ -60,11 +60,11 @@ It includes:
 - Heartcode Improvement Demonstration — bounded before/after evaluation
 - Heartcode Arena — same-prompt multi-provider comparison
 
-The Live Validator is configured with OpenAI. The production Heartcode Arena submits the same prompt through OpenAI, Anthropic, and Google and evaluates each returned response with the same provider-neutral, versioned Heartcode evaluator.
+The Live Validator is configured with OpenAI. Project-maintained runtime evidence reports that one production Heartcode Arena run submitted the same prompt through OpenAI, Anthropic, and Google and evaluated each returned response with the same provider-neutral, versioned Heartcode evaluator.
 
 Deterministic unavailable-provider results remain part of partial-provider-failure handling and tests. They do not describe the normal production Arena configuration.
 
-See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free record of a verified three-provider run.
+See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free record of that internally verified run. The record has not been independently reproduced and does not contain complete harness evidence required for a controlled cross-provider benchmark claim.
 
 ## Current Boundaries
 
