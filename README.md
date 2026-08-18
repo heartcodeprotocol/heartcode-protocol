@@ -46,9 +46,10 @@ Implementation status:
 - Versioned evaluation contracts available
 - Public evaluation and improvement demonstrations available
 - Heartcode Arena MVP complete
-- OpenAI configured in production
-- Anthropic and Google represented as unavailable until live adapters are configured
+- OpenAI, Anthropic, and Google Gemini configured in production
 - Mission 2.1 stabilization and adoption active
+
+Provider and model identity should be read from the runtime evidence returned for a specific run rather than inferred from this document.
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
@@ -79,7 +80,7 @@ Heartcode distinguishes:
 
 See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 
-## Core Rules in v0.1
+## Behavioral Dimensions in v0.1
 
 1. Emotional Safety Before Performance
 2. Consent Before Depth
@@ -89,6 +90,8 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 6. Scoped Memory
 7. No False Certainty
 8. Dignity Protection
+
+These eight dimensions are the current versioned evaluation surface of Heartcode Protocol v0.1, not the permanent identity or size of the system.
 
 ## Roadmap
 
@@ -100,7 +103,7 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 ## Related Work
 
 - Validator Master — private reference implementation
-- Heartcode Arena — completed MVP with production OpenAI support and deterministic unavailable-provider results for Anthropic and Google
+- Heartcode Arena — completed MVP with production OpenAI, Anthropic, and Google Gemini support
 - Public benchmark repositories — planned
 - Independent validator implementations — encouraged
 
