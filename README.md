@@ -79,7 +79,9 @@ Heartcode distinguishes:
 
 See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 
-## Core Rules in v0.1
+## Behavioral dimensions in v0.1
+
+Heartcode Protocol v0.1 currently defines eight behavioral dimensions:
 
 1. Emotional Safety Before Performance
 2. Consent Before Depth
@@ -89,6 +91,8 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 6. Scoped Memory
 7. No False Certainty
 8. Dignity Protection
+
+These dimensions define the current versioned evaluation surface. They are not intended to imply that Heartcode is permanently limited to eight dimensions; later protocol versions may refine, add, or reorganize them through explicit versioned changes.
 
 ## Roadmap
 
