@@ -25,6 +25,12 @@ Heartcode is intended to encourage transparent, evidence-based evaluation of AI 
 
 This repository defines the public protocol and its public-facing documentation. It is not a certification program, and it does not claim that any AI system is inherently safe, universally correct, or complete.
 
+## Licensing Status
+
+This repository does not currently contain an explicit open-source or open-content license. The term **open standard** here refers to the public, versioned specification and public review process; it should not be interpreted as an unstated grant of legal reuse rights.
+
+See [LICENSING.md](LICENSING.md) for the current project posture and the licensing decision that remains open.
+
 ## Reference Implementation
 
 **Validator Master** is the reference implementation of the Heartcode Protocol.
