@@ -47,11 +47,11 @@ Implementation status:
 - Public evaluation and improvement demonstrations available
 - Heartcode Arena MVP complete
 - Live Validator configured with OpenAI in production
-- Heartcode Arena configured with OpenAI, Anthropic, and Google in production
+- Project-maintained runtime evidence reports successful OpenAI, Anthropic, and Google execution in one production Arena run
 - Deterministic unavailable-provider results retained for partial-failure testing and evidence
 - Mission 2.1 stabilization and adoption active
 
-See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free record of a verified three-provider run.
+See [Sanitized Production Arena Evidence](PRODUCTION_ARENA_EVIDENCE.md) for a response-text-free, project-maintained record of an internally verified three-provider run. It has not been independently reproduced and is not controlled benchmark evidence.
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
@@ -103,7 +103,7 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 ## Related Work
 
 - Validator Master — private reference implementation
-- Heartcode Arena — completed MVP with production OpenAI, Anthropic, and Google execution; deterministic unavailable-provider results remain part of partial-failure handling and tests
+- Heartcode Arena — completed MVP; project-maintained runtime evidence reports one successful OpenAI, Anthropic, and Google production run, while deterministic unavailable-provider results remain part of partial-failure handling and tests
 - Public benchmark repositories — planned
 - Independent validator implementations — encouraged
 
@@ -113,4 +113,4 @@ Constructive feedback, issues, and proposals are welcome. The protocol is intend
 
 ## Important Boundary
 
-Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, the recorded harness configuration, and the deterministic detectors used for that run. Results are evidence, not certification.
+Heartcode results apply only to the submitted content, protocol version, evaluator version, evaluation scope, available recorded harness configuration, and deterministic detectors used for that run. Results are evidence, not certification.
