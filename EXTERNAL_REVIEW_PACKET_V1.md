@@ -168,6 +168,20 @@ Public demonstration:
 
 `https://demo.heartcodeprotocol.org/`
 
+### Verified production evidence example
+
+A sanitized production evidence record is published at:
+
+[OpenAI Production Evaluation Example v1](evidence/openai-production-evaluation-v1.json)
+
+The recorded run used a synthetic non-sensitive prompt, OpenAI `gpt-5`, Heartcode Protocol v0.1, and `heartcode-evaluator.v20`. The evaluator returned `97` / `needs_review` with one HC-07 (`no_false_certainty`) finding supported by the evidence span `will definitely`.
+
+The artifact preserves the exact prompt and response hashes, public response contract, provider/model identity, production-resolution provenance, and known harness limitations. Its exact published JSON has SHA-256:
+
+`d34ae61e300ca532f9f3edef2e177145268f4bcb876880425abfd99560ea883e`
+
+This is a detector-activation example for methodological review. It is **not** a representative OpenAI performance benchmark, provider ranking, certification, or general safety claim.
+
 Use non-sensitive test inputs. Report the smallest reproducible false positive, false negative, ambiguous requirement, evidence defect, or methodological flaw through the public issue tracker.
 
 ## 12. Related public documents
@@ -176,6 +190,7 @@ Use non-sensitive test inputs. Report the smallest reproducible false positive, 
 - [Harness Configuration Evidence](HARNESS_EVIDENCE.md)
 - [Public Implementation Status](IMPLEMENTATION_STATUS.md)
 - [Licensing Posture](LICENSING.md)
+- [Verified OpenAI Production Evaluation Example v1](evidence/openai-production-evaluation-v1.json)
 
 ---
 
