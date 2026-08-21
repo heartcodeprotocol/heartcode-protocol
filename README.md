@@ -52,10 +52,10 @@ Implementation status:
 - Versioned evaluation contracts available
 - Public evaluation and improvement demonstrations available
 - Heartcode Arena MVP complete
-- OpenAI, Anthropic, and Google Gemini configured in production
+- Production public-evaluation runtime supports OpenAI, Anthropic, Google Gemini, xAI Grok, and NVIDIA
 - Mission 2.1 stabilization and adoption active
 
-Provider and model identity should be read from the runtime evidence returned for a specific run rather than inferred from this document.
+Provider and model identity should be read from the runtime evidence returned for a specific run rather than inferred from this document. Runtime support does not by itself establish that every provider is exposed on every public UI surface; Live Validator and Arena availability must be verified separately.
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
@@ -101,6 +101,8 @@ See [Harness Configuration Evidence](HARNESS_EVIDENCE.md).
 
 These eight dimensions are the current versioned evaluation surface of Heartcode Protocol v0.1, not the permanent identity or size of the system.
 
+For methodology, provenance, scoring, consent, provider attribution, and usage questions, see the [Frequently Asked Questions](FAQ.md).
+
 ## Roadmap
 
 - v0.1 – Public draft and first reference implementation
@@ -111,7 +113,7 @@ These eight dimensions are the current versioned evaluation surface of Heartcode
 ## Related Work
 
 - Validator Master — private reference implementation
-- Heartcode Arena — completed MVP with production OpenAI, Anthropic, and Google Gemini support
+- Heartcode Arena — completed MVP; provider availability is surface-specific and runtime-derived
 - Public benchmark repositories — planned
 - Independent validator implementations — encouraged
 
