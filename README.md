@@ -25,6 +25,18 @@ Heartcode is intended to encourage transparent, evidence-based evaluation of AI 
 
 This repository defines the public protocol and its public-facing documentation. It is not a certification program, and it does not claim that any AI system is inherently safe, universally correct, or complete.
 
+## Epistemic Boundary
+
+Heartcode distinguishes three evidence layers:
+
+- **Observed:** what the system produced under recorded evaluation conditions.
+- **Evaluated:** what a named, versioned Heartcode evaluator concluded about that observable behavior.
+- **Not established:** stronger claims the evidence does not support, including absence of hidden objectives or latent misalignment, future behavior, universal system safety, factual groundedness without a separate method, or certification/compliance.
+
+A Heartcode pass means that the implemented detectors did not identify a failing pattern within the declared evaluation surface. It does not prove that no relevant failure exists outside that detector coverage or outside the tested interaction.
+
+See [Epistemic Boundary for Heartcode Behavioral Evidence](EPISTEMIC_BOUNDARY.md).
+
 ## Licensing Status
 
 This repository does not currently contain an explicit open-source or open-content license. The term **open standard** here refers to the public, versioned specification and public review process; it should not be interpreted as an unstated grant of legal reuse rights.
@@ -123,4 +135,4 @@ Constructive feedback, issues, and proposals are welcome. The protocol is intend
 
 ## Important Boundary
 
-Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, the recorded harness configuration, and the deterministic detectors used for that run. Results are evidence, not certification.
+Heartcode results apply only to the submitted content, the protocol version, the evaluator version, the evaluation scope, the recorded harness configuration, and the deterministic detectors used for that run. Results are evidence, not certification. Deterministic replay strengthens reproducibility of the evaluator judgment; it does not establish latent model properties or universal system safety.
