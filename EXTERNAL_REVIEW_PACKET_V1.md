@@ -29,6 +29,22 @@ The project does **not** claim that:
 - deterministic detectors capture every meaningful failure mode;
 - a result generalizes beyond the submitted interaction and recorded execution context.
 
+## 2A. Epistemic boundary
+
+Heartcode behavioral evidence is intentionally limited to observable behavior and the conclusions produced by a named, versioned evaluator over that declared evaluation surface.
+
+The methodology distinguishes three layers:
+
+- **Observed:** what the system produced under recorded evaluation conditions.
+- **Evaluated:** what the named/versioned Heartcode evaluator concluded about that observable behavior.
+- **Not established:** stronger claims the evidence cannot support.
+
+A Heartcode pass means that the implemented detectors did not identify a failing pattern within the evaluated surface. It does **not** establish the absence of hidden objectives, deceptive alignment, evaluation awareness, latent misalignment, or other unobserved internal properties. It also does not establish future behavior under materially different prompts, tools, contexts, sampling conditions, or deployment environments.
+
+Deterministic replay strengthens reproducibility of the evaluator's judgment over preserved evidence. It does not make provider generation deterministic and does not convert behavioral evidence into proof of latent model properties.
+
+See [Epistemic Boundary for Heartcode Behavioral Evidence](EPISTEMIC_BOUNDARY.md).
+
 ## 3. Current v0.1 evaluation surface
 
 Heartcode Protocol v0.1 currently defines eight behavioral dimensions:
@@ -126,7 +142,7 @@ These mechanisms support implementation consistency. They do not by themselves e
 
 ## 8. Known limitations
 
-1. **Observable-response scope.** The current evaluator primarily assesses observable response text, not latent model state, training process, or complete system safety.
+1. **Observable-response scope.** The current evaluator primarily assesses observable response text, not latent model state, hidden objectives, training process, internal representations, or complete system safety.
 2. **Detector coverage.** Bounded deterministic detectors can produce false positives and false negatives.
 3. **Protocol validity.** Heartcode v0.1 is a public draft and has not established universal external validity.
 4. **Harness evidence.** The production evidence contract does not yet preserve every harness field defined by the public methodology.
@@ -135,6 +151,7 @@ These mechanisms support implementation consistency. They do not by themselves e
 7. **Licensing.** The repository's current licensing posture is documented separately and an explicit reusable-content/software license has not yet been selected.
 8. **No certification.** A Heartcode result is evidence under a specific evaluator/version, not certification of a model, provider, or organization.
 9. **Evaluator/provider attribution.** Provider names identify systems whose responses were evaluated. They do not imply that the provider conducted, sponsored, endorsed, certified, or participated in the evaluation.
+10. **Reproducibility is not latent-property verification.** Replaying the same deterministic evaluation over preserved evidence can reproduce the evaluator judgment, but it cannot establish why the model produced the response or whether an unobserved property was absent.
 
 ## 9. Requested falsification attempts
 
@@ -147,7 +164,8 @@ Please try to produce the smallest non-sensitive reproducible case where:
 - provider/harness differences are incorrectly attributed to model behavior;
 - a dimension cannot be operationalized consistently;
 - a material conversational behavioral risk is missing;
-- project wording implies stronger safety, conformity, provider-participation, or model-quality claims than the evidence supports.
+- project wording implies stronger safety, conformity, provider-participation, or model-quality claims than the evidence supports;
+- a behavioral pass is being interpreted as evidence of a latent or system-level safety property that the evaluation surface cannot establish.
 
 ## 10. Questions for reviewers
 
@@ -159,6 +177,7 @@ Please try to produce the smallest non-sensitive reproducible case where:
 6. Does the private reference implementation materially undermine the transparency or reproducibility claim? If so, what minimum implementation surface should be public?
 7. What would make these artifacts useful to independent assessors without turning the project into a certification or provider-ranking system?
 8. Is the evaluator/provider relationship unambiguous to a reader who encounters the evidence record without additional context?
+9. Is the distinction between observable behavioral evidence and latent/system-level safety properties sufficiently explicit?
 
 ## 11. Public reproduction and feedback path
 
@@ -193,6 +212,7 @@ Use non-sensitive test inputs. Report the smallest reproducible false positive, 
 ## 12. Related public documents
 
 - [Heartcode Protocol v0.1](protocol/HEARTCODE-v0.1.md)
+- [Epistemic Boundary for Heartcode Behavioral Evidence](EPISTEMIC_BOUNDARY.md)
 - [Harness Configuration Evidence](HARNESS_EVIDENCE.md)
 - [Public Implementation Status](IMPLEMENTATION_STATUS.md)
 - [Licensing Posture](LICENSING.md)
