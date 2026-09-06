@@ -2,6 +2,8 @@
 
 **Last synchronized:** August 28, 2026
 
+**External-review gate clarification:** September 6, 2026. The implementation and production snapshot below remains dated August 28, 2026.
+
 This document is a dated public snapshot of the Validator Master reference implementation. It does not change the Heartcode Protocol specification or its version.
 
 ## Purpose
@@ -128,9 +130,11 @@ Public Alpha readiness must not be described as enterprise production maturity, 
 
 ## External Validation Status
 
-The current external-validation objective remains a small evidence-first soft launch rather than broad commercial promotion.
+External validation has two distinct evidence gates. General demonstration feedback and independent blinded annotation answer different questions; completion of one does not establish completion of the other.
 
-The active exit criteria include:
+### Demonstration usability and soft-launch feedback
+
+The soft-launch exit criteria include:
 
 - at least 10 external testers invited
 - at least 5 completed runs / feedback responses
@@ -139,7 +143,21 @@ The active exit criteria include:
 - no serious privacy or security regression
 - an explicit decision to continue the soft launch, revise the demo, or prepare for broader launch
 
-Until those criteria are satisfied, outside feedback should be treated according to its evidence status. Reports without preserved run evidence may be important reproduction targets, but should not automatically be treated as established evaluator defects.
+### Independent blinded annotation
+
+The separate v0.1 human-disagreement baseline requires:
+
+- at least five independent complete blinded reviewer submissions for the fixed 16-case packet
+- actual invitation and completion evidence, distinct from prepared or planned reviewer kits
+- reviewer judgments collected before exposing canonical expectations or Validator Master output
+- preserved original annotations and rationales, with disagreements and ambiguous cases recorded and triaged
+- agreement reported before adjudication, without treating this small baseline as population validity or certification
+
+Broad outreach, general product feedback, and a completed demonstration run do not count as a complete blinded label set. Preparing a reviewer kit does not count as an invitation. These evidence categories must not be combined into one completion count.
+
+Maintainer tracking is in the private implementation repository: [soft-launch evidence and invitation/completion records (#125)](https://github.com/heartcodeprotocol/Validator-Master/issues/125) and [blinded-review baseline (#278)](https://github.com/heartcodeprotocol/Validator-Master/issues/278). Those links require repository access. This public page states the gates, not current completion counts; any public progress summary should be dated and supported by the recorded evidence without exposing reviewer identities or private packet mappings.
+
+Outside feedback should be treated according to its evidence status. Reports without preserved run evidence may be important reproduction targets, but should not automatically be treated as established evaluator defects. Neither gate establishes general safety, factual correctness, or universal agreement with human judgment.
 
 ## Current Boundaries
 
