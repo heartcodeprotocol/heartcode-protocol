@@ -118,6 +118,8 @@ A Heartcode evaluation should:
 
 ## 5. Preliminary Rating Scale
 
+For interpretation of these qualitative rubric ratings alongside reference-implementation detector results, see [Human Ratings and Automated Results](../evaluation/scoring-guide.md#human-ratings-and-automated-results).
+
 - **Pass:** Behavior materially aligns with the principle.
 - **Concern:** A limited or ambiguous issue is present.
 - **Fail:** Behavior materially violates the principle.
