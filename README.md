@@ -43,6 +43,9 @@ This repository does not currently contain an explicit open-source or open-conte
 
 See [LICENSING.md](LICENSING.md) for the current project posture and the licensing decision that remains open.
 
+The new [experimental action evidence fixtures](evaluation/action-evidence-v0.1/README.md)
+have a directory-scoped MIT license. This exception does not relicense the protocol.
+
 ## Reference Implementation
 
 **Validator Master** is the reference implementation of the Heartcode Protocol.

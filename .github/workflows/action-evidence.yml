@@ -1,0 +1,20 @@
+name: Action evidence fixtures
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Verify public fixture hashes and rejection cases
+        run: node --test evaluation/action-evidence-v0.1/verify.test.mjs

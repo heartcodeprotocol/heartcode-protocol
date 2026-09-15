@@ -1,0 +1,23 @@
+{
+  "release": "action-evidence-v0.1",
+  "fixtureCount": 8,
+  "policy": "experimental-action-boundary.v0.1",
+  "synthetic": true,
+  "canonicalRepository": "https://github.com/heartcodeprotocol/heartcode-protocol",
+  "canonicalPath": "evaluation/action-evidence-v0.1",
+  "generationSource": {
+    "repository": "heartcodeprotocol/Validator-Master",
+    "commit": "c5d3a6891f54f91de2c41f870d8312676cb658cd",
+    "script": "scripts/generate-public-action-fixtures.ts",
+    "access": "private"
+  },
+  "files": {
+    ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+    "LICENSE": "84083e6727eee175a7aaf8264294125332b7eb2f55d95af1ed0ee5f7b0c18478",
+    "README.md": "e31afa4d8587bc0450e8d3a8c8274ece428cd5f408fe410cba93dbe350a61559",
+    "expected.jsonl": "a851bedb51b21fda36d2d1be06ad0dde9505004c590de82725b5b79de9122ccf",
+    "fixtures.jsonl": "7a7f1cd7eec8baae0c0fe66815ec8b531bdcbe62779a2512a5f59cf2c902cb11",
+    "verify.mjs": "ef7f40317456bc14719ff82654ba553a21ff3ba1dd096f8e4b5f8da7feb1d88c",
+    "verify.test.mjs": "69b7bd0a887537838b6ec415c174e489da90408802be428ffc7ce0c7de44368b"
+  }
+}
