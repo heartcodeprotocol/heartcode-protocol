@@ -1,11 +1,19 @@
 # Licensing Posture
 
-**Status:** Public clarification pending selection of an explicit license  
+**Status:** General repository license pending; scoped fixture exception below
 **Date:** 2026-08-18
 
 Heartcode Protocol is published for public inspection, discussion, criticism, citation, and empirical review. The project uses the term **open standard** to describe the public, versioned specification and its public review process.
 
 ## Current legal posture
+
+### Scoped exception: action evidence fixtures
+
+The newly authored files under `evaluation/action-evidence-v0.1/` are explicitly
+MIT-licensed by that directory's LICENSE file. This narrow release exception does
+not license the protocol specification, other repository content, trademarks, or
+the private Validator Master implementation. General statements below concern
+repository content outside this explicitly licensed directory.
 
 This repository does **not currently contain an explicit LICENSE file** and the project has not yet adopted a specific open-source, open-content, or standards-document license for the repository contents.
 
