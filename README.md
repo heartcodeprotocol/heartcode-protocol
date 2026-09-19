@@ -74,6 +74,13 @@ Provider and model identity should be read from the runtime evidence returned fo
 
 See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the public implementation relationship and current boundaries.
 
+## Connect an Agent
+
+Use the [agent quickstart](AGENT_QUICKSTART.md) to evaluate an existing AI response
+through the public HTTP API without a model-provider API key or a generation call.
+The guide includes a verified synthetic request, structured evidence, error handling,
+and the separate access requirements for the local MCP server.
+
 ## Try to Break It
 
 If you work on LLM evaluation, AI red teaming, GenAI security, responsible AI, model risk, or AI governance, external criticism is useful.
